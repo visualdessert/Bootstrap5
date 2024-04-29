@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bootstrap Introduction</title>
+  </head>
+  <body>
+    <div class="container-fluid p-5 bg-info text-dark text-center">
+      <h1>Luis Musni</h1>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide mt-5" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/1e405a7d5ccdd11aa34b6a26aef1bc84.jpg"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="400px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/aiah.jpg"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="400px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/422b3c312e228fa5ee803c25870921a5.jpg"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="400px"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- end of carousell -->
+
+    <div class="container-fluid bg-light mt-5">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Web Development</h3>
+          <p>
+            Web development refers to the process of creating, designing, and
+            maintaining websites. It involves various aspects such as coding,
+            web design, content creation, and website management to ensure a
+            functional, user-friendly, and visually appealing online presence.
+            Web developers use a combination of front-end and back-end
+            technologies, including HTML, CSS, JavaScript, and server-side
+            languages like PHP or Python, to build websites that can be accessed
+            through the internet. The ultimate goal of web development is to
+            provide an optimal user experience, ensuring websites are
+            accessible, responsive, and compatible with different devices and
+            browsers.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h3>Graphic Design</h3>
+          <p>
+            Graphic design is a creative and artistic field that involves the
+            creation of visual content, including images, illustrations, and
+            typography, to convey ideas, messages, or information. It
+            encompasses various mediums such as print, digital, and multimedia
+            platforms. Graphic designers use their skills in visual arts, design
+            principles, and technology to produce eye-catching and effective
+            designs for a wide range of applications, including logos, websites,
+            advertisements, packaging, and publications. Their primary goal is
+            to communicate a clear and compelling message to the target audience
+            while maintaining aesthetic appeal and adhering to the client's
+            brand identity.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h3>Video Editing</h3>
+          <p>
+            Video editing is the process of assembling, organizing, and
+            manipulating various video clips, images, and audio files to create
+            a polished, cohesive, and visually appealing final product. This
+            creative task involves the use of specialized software and tools to
+            cut, trim, splice, and enhance the video and audio elements, as well
+            as adding special effects, transitions, and titles. A skilled video
+            editor can transform raw footage into a compelling narrative,
+            ensuring that the final video effectively communicates its intended
+            message or story. This process requires a keen eye for detail,
+            strong technical skills, and a good understanding of storytelling
+            and visual communication principles. Video editing is an essential
+            part of the filmmaking, television production, and digital content
+            creation industries, playing a crucial role in shaping the overall
+            impact and quality of the final product.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h3>3D Animation</h3>
+          <p>
+            Video editing is the process of assembling, organizing, and
+            manipulating various video clips, images, and audio files to create
+            a polished, cohesive, and visually appealing final product. This
+            creative task involves the use of specialized software and tools to
+            cut, trim, splice, and enhance the video and audio elements, as well
+            as adding special effects, transitions, and titles. A skilled video
+            editor can transform raw footage into a compelling narrative,
+            ensuring that the final video effectively communicates its intended
+            message or story. This process requires a keen eye for detail,
+            strong technical skills, and a good understanding of storytelling
+            and visual communication principles. Video editing is an essential
+            part of the filmmaking, television production, and digital content
+            creation industries, playing a crucial role in shaping the overall
+            impact and quality of the final product.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="container mt-3">
+          <h2>Card Image</h2>
+
+          <div class="card" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="images/7dd61955319b8ff03f664fcdc202f290.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Bini Aiah</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Bini Aiah</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Engineer</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <div class="card" style="width: 400px">
+            <div class="card-body">
+              <h4 class="card-title">Bini Aiah</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="card-img-bottom"
+              src="images/aiah.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="container mt-3">
+          <h2>Card Image</h2>
+          <div class="card" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="images/dd6831846ea2647ceaa6b7a325d4dd23.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Bini Aiah</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="card" style="width: 400px">
+            <div class="card-body">
+              <h4 class="card-title">Bini Aiah</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="card-img-bottom"
+              src="images/fd50e20a44d26a7d11d39d3fb62c024b.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="container mt-3">
+          <h2>Card Image</h2>
+
+          <div class="card" style="width: 400px">
+            <img
+            class="card-img-bottom"
+            src="images/1e405a7d5ccdd11aa34b6a26aef1bc84.jpg"
+            alt="Card image"
+            style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Bini Aiah</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="card" style="width: 400px">
+            <div class="card-body">
+              <h4 class="card-title">bini Aiah</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="card-img-bottom"
+              src="images/422b3c312e228fa5ee803c25870921a5.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="container mt-3">
+          <h2>Card Image</h2>
+
+          <div class="card" style="width: 400px">
+            <img
+              class="card-img-top"
+              src="images/da4d4da63287f29261cc1a2416db3ce4.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Vision</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="card" style="width: 400px">
+            <div class="card-body">
+              <h4 class="card-title">Meow</h4>
+              <p class="card-text">
+                Some example text some example text. 
+              </p>
+              <div class="container mt-3">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  See Profile
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">Modal body..</div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="card-img-bottom"
+              src="images/10ac4ca243892c87ba78458464336711.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--Google Maps-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+      <div class="col-sm">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1315805662057!2d120.9777733!3d14.5915772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca186baa7b63%3A0xe5d2c0464e5518e3!2sLyceum%20of%20the%20Philippines%20University!5e0!3m2!1sen!2sph!4v1714409333337!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.facebook.com/musni.luis"
+            role="button"
+            ><i class="fa-brands fa-facebook"></i></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #000000"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-body" href="#">visualdessert</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
